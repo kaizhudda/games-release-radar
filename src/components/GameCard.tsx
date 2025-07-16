@@ -1,14 +1,14 @@
-import { Game, Platform } from '@/types/game';
+import { Game, Platform } from "@/types/game";
 
 interface GameCardProps {
   game: Game;
 }
 
 const platformColors: Record<Platform, string> = {
-  'PlayStation': 'platform-badge playstation',
-  'Xbox': 'platform-badge xbox',
-  'PC': 'platform-badge pc',
-  'Nintendo Switch': 'platform-badge nintendo-switch',
+  PlayStation: "platform-badge playstation",
+  Xbox: "platform-badge xbox",
+  PC: "platform-badge pc",
+  "Nintendo Switch": "platform-badge nintendo-switch",
 };
 
 export default function GameCard({ game }: GameCardProps) {
@@ -19,31 +19,28 @@ export default function GameCard({ game }: GameCardProps) {
           {game.title}
         </h3>
       </div>
-      
+
       <div className="flex flex-wrap gap-2 mb-3">
         {game.platforms.map((platform) => (
-          <span
-            key={platform}
-            className={platformColors[platform]}
-          >
+          <span key={platform} className={platformColors[platform]}>
             {platform}
           </span>
         ))}
       </div>
-      
+
       <div className="space-y-2 mb-4">
         <div className="flex items-center text-sm text-gray-600">
           <span className="font-medium mr-2">Release:</span>
           <span>{game.releaseDate}</span>
         </div>
-        
+
         {game.developer && (
           <div className="flex items-center text-sm text-gray-600">
             <span className="font-medium mr-2">Developer:</span>
             <span>{game.developer}</span>
           </div>
         )}
-        
+
         {game.genre && (
           <div className="flex items-center text-sm text-gray-600">
             <span className="font-medium mr-2">Genre:</span>
@@ -51,11 +48,9 @@ export default function GameCard({ game }: GameCardProps) {
           </div>
         )}
       </div>
-      
+
       {game.description && (
-        <p className="text-sm text-gray-700 line-clamp-3">
-          {game.description}
-        </p>
+        <p className="text-sm text-gray-700 line-clamp-3">{game.description}</p>
       )}
     </div>
   );

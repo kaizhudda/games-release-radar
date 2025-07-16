@@ -12,35 +12,35 @@
   .game-card {
     @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200 border border-gray-200;
   }
-  
+
   .platform-badge {
     @apply px-3 py-1 rounded-full text-xs font-medium;
   }
-  
+
   .platform-badge.playstation {
     @apply bg-blue-100 text-blue-800;
   }
-  
+
   .platform-badge.xbox {
     @apply bg-green-100 text-green-800;
   }
-  
+
   .platform-badge.pc {
     @apply bg-purple-100 text-purple-800;
   }
-  
+
   .platform-badge.nintendo-switch {
     @apply bg-red-100 text-red-800;
   }
-  
+
   .filter-button {
     @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 border;
   }
-  
+
   .filter-button.active {
     @apply bg-primary-500 text-white border-primary-500;
   }
-  
+
   .filter-button.inactive {
     @apply bg-white text-gray-700 border-gray-300 hover:bg-gray-50;
   }

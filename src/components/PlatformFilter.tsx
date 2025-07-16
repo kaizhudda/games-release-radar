@@ -1,13 +1,22 @@
-import { Platform } from '@/types/game';
+import { Platform } from "@/types/game";
 
 interface PlatformFilterProps {
-  selectedPlatform: Platform | 'All';
-  onPlatformChange: (platform: Platform | 'All') => void;
+  selectedPlatform: Platform | "All";
+  onPlatformChange: (platform: Platform | "All") => void;
 }
 
-const platforms: (Platform | 'All')[] = ['All', 'PlayStation', 'Xbox', 'PC', 'Nintendo Switch'];
+const platforms: (Platform | "All")[] = [
+  "All",
+  "PlayStation",
+  "Xbox",
+  "PC",
+  "Nintendo Switch",
+];
 
-export default function PlatformFilter({ selectedPlatform, onPlatformChange }: PlatformFilterProps) {
+export default function PlatformFilter({
+  selectedPlatform,
+  onPlatformChange,
+}: PlatformFilterProps) {
   return (
     <div className="flex flex-wrap gap-3 justify-center">
       {platforms.map((platform) => (
@@ -15,7 +24,7 @@ export default function PlatformFilter({ selectedPlatform, onPlatformChange }: P
           key={platform}
           onClick={() => onPlatformChange(platform)}
           className={`filter-button ${
-            selectedPlatform === platform ? 'active' : 'inactive'
+            selectedPlatform === platform ? "active" : "inactive"
           }`}
         >
           {platform}

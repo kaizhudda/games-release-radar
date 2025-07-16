@@ -20,23 +20,27 @@ A static website that tracks upcoming game releases across all platforms, automa
 ## Local Development
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/your-username/games-release-radar.git
    cd games-release-radar
    ```
 
 2. **Install dependencies**:
+
    ```bash
    npm install
    ```
 
 3. **Set up environment variables**:
    Create a `.env` file in the root directory:
+
    ```
    FIRECRAWL_API_KEY=your_firecrawl_api_key_here
    ```
 
 4. **Run the development server**:
+
    ```bash
    npm run dev
    ```

@@ -11,7 +11,7 @@ export interface Game {
   genre?: string;
 }
 
-export type Platform = 'PlayStation' | 'Xbox' | 'PC' | 'Nintendo Switch';
+export type Platform = "PlayStation" | "Xbox" | "PC" | "Nintendo Switch";
 
 export interface GameData {
   games: Game[];
