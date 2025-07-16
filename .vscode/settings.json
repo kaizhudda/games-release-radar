@@ -1,0 +1,7 @@
+{
+  "chat.mcp.serverSampling": {
+    "agent/.vscode/mcp.json: firecrawl": {
+      "allowedModels": ["github.copilot-chat/claude-sonnet-4"]
+    }
+  }
+}
